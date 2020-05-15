@@ -16,6 +16,7 @@
 
 import tempfile
 
+from requests import get
 import addr_util
 import benchmark
 import better_webbrowser
@@ -91,7 +92,7 @@ class BaseUI(object):
 
     asn = None
     domain = None
-    client_ip = providers.GetExternalIp()
+    client_ip = get('https://api.ipify.org').text
     if client_ip:
 #      self.UpdateStatus("Detected external IP as %s" % client_ip)
       local_ns = providers.SystemResolver()
