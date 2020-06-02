@@ -11,12 +11,12 @@ at Google.
 namebench runs on Mac OS X, Windows, and UNIX, and is available with a
 graphical user interface as well as a command-line interface. 
 
-Requirements:
+## Requirements:
 
   * Python 2.4 - 2.6. If you are using Mac OS X or Linux, this is
     built-in. Otherwise, visit http://www.python.org/
 
-##--[ quick use guide ]---------------------------------------------------------
+## --[ quick use guide ]---------------------------------------------------------
 
 namebench comes with two interfaces: a simple graphical interface, and a
 more advanced command-line interface. If you have downloaded the versions
@@ -36,7 +36,7 @@ to the command-line, or edit namebench.cfg:
 
   ./namebench.py 10.0.0.1 192.168.0.1
 
---[ credit ]------------------------------------------------------------------
+## --[ credit ]------------------------------------------------------------------
 
 namebench includes some wonderful third party software:
 
@@ -51,8 +51,9 @@ namebench includes some wonderful third party software:
 For licensing information, see the LICENSE file within the appropriate
 subdirectory.
 
---[ options ]-----------------------------------------------------------------
+## --[ options ]-----------------------------------------------------------------
 
+```
 Usage: namebench.py [options]
 
 Options:
@@ -107,11 +108,13 @@ Options:
                         Enable censorship checks
   -6, --ipv6_only       Only include IPv6 name servers
   -O, --only            Only test nameservers passed as arguments
-
---[ sample output ]-------------------------------------------------------------
+```
+## --[ sample output ]-------------------------------------------------------------
 
 namebench 1.3b1 - best history source (automatic) on 2010-05-27 08:34:46.585534
+
 threads=40/2 queries=250 runs=1 timeout=3.5 health_timeout=3.75 servers=11
+
 ------------------------------------------------------------------------------
 - Reading Top 2,000 Websites (Alexa): data/alexa-top-2000-domains.txt (0.7MB)
 - Reading Cache Latency Test (100% hit): data/cache-hit.txt (0.1MB)
